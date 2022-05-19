@@ -1,9 +1,9 @@
-package ex1_daily;
+package ex1_daily_0518;
 
 //설계도, 붕어빵 틀을 만드는 작업
 public class FieldInit {
 	
-	//기본현
+	//기본형
 	byte byteField;  //1byte
 	short shortField; //2
 	int intField; //4(디폴트타입)

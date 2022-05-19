@@ -1,4 +1,4 @@
-package ex1_daily;
+package ex1_daily_0518;
 
 public class FieldInitEx {
 	public static void main(String[] args) {
