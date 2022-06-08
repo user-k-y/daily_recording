@@ -1,0 +1,528 @@
+<!-- HTML5 문법-->
+<!-- HTML은 알파벳의 대소문자를 구분X 하나로 유지하기-->
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>HTML 기초문법 총정리</title>
+    </head>
+    <body>
+
+        <!-- 태그 : 꺽새로 된 문법들
+            . a : 태그명
+            . href = "주소" : 속성 = "속성값"
+        
+        -->
+        <h1>header 제목</h1>
+        <a href="http://www.naver.com">anchor 페이지 이동</a>
+        <br> <br /> 
+        <hr> <hr />
+        공&nbsp;&nbsp;&nbsp;백
+        <img src="라이언힘내.png" alt="라이언 이미지" width="150px">
+        <!-- 내용을 적을 컨텐츠가 없어서 단일태그다
+            but img도 단일태그다
+            img 태그는 2개의 속성을 지정해야한다.
+            src가 잘못되었고, alt를 지우면 엑박이 뜬다
+            alt는 그림설명
+            시각장애인 청각장애인을 위한 기법이 들어있다.
+
+            http://을 넣어야 넘어감
+            https는 시크릿으로 보안강화한 것
+            단일 태그 둘 중에 하나로 통일해서 작성 -->
+        
+        <ul>
+            <li>사과</li>
+            <li>배</li>
+            <li>바나나</li>
+        </ul>
+
+        <!-- 리스트내용은 부모와 자식관계 감싸는 구조 -->
+
+        <table border="1">
+            <tr>
+                <td colspan="2" rowspan="2">두줄 두개 옆</td>
+                <!-- colspan rowspan 다 td의 속성 -->
+                <!-- 먹은 만큼 다 지워야 한다 2줄 먹었으니 2행도 2줄 다 없애야 함 -->
+                
+                <td>1행3열</td>
+                <td>1행4열</td>
+            </tr>
+            <tr>
+                
+                
+                <td>2행3열</td>
+                <td>2행4열</td>
+            </tr>
+            <tr>
+                <td>3행1열</td>
+                <td>3행2열</td>
+                <td>3행3열</td>
+                <td>3행4열</td>
+            </tr>
+
+
+        </table>
+
+
+
+
+
+
+        <h1>상품설명</h1>
+
+        <table border="1">
+            <tr>
+                <th>이미지</th>
+                <th>제품명</th>
+                <th>가격</th>
+            </tr>
+            <tr>
+                <td><img src="욕조무선가습기_라이언.png" alt="욕조무선가습기_라이언"></td>
+                <td>욕조 무선 가습기_라이언</td>
+                <td>39,000원</td>
+            </tr>
+            <tr>
+                <td><img src="트리라이언.png" alt="트리라이언"></td>
+                <td>에어팟프로케이스 스트랩세트_트리라이언</td>
+                <td>18,000원</td>
+            </tr>
+
+
+
+
+        </table>
+
+        <h1>table practice</h1>
+        <table border="1">
+            <tr>
+                <td colspan="5">가로로 5칸 합침</td>
+            </tr>
+
+            <tr>
+                <td rowspan="4">세로로 4칸 합침
+                    <br>
+                    <br>
+                    <img src="라이언힘내.png" alt="라이언이미지" width="115px" height="110px">
+                </td>
+                <td colspan="4">가로로 4칸 합침</td>
+            </tr>
+
+            <tr>        
+                <td>셀</td>
+                <td rowspan="2">세로로 2칸 합침</td>
+                <td>셀</td>
+                <td rowspan="3">세로로 3칸 합침</td>
+            </tr>
+
+            <tr>
+                
+                <td>셀</td>
+
+                <td>셀</td>
+            </tr>
+
+            <tr>
+                
+                
+                <td colspan="2">가로로 2칸 합침</td>
+                
+                <td>셀</td>
+            </tr>
+            
+        </table>
+
+        <!-- 평가문제 풀기 -->
+
+        <br><br><br>
+
+        <table border="1">
+            <caption>table 평가문제</caption>
+            <tr>
+                <td>Column 1</td>
+                <td>Column 2</td>
+                <td>Column 3</td>
+            </tr>
+            <tr>
+                <td rowspan="2">Row 1 Cell 1</td>
+                <td>Row 1 Cell 2</td>
+                <td>Row 1 Cell 3</td>
+            </tr>
+            <tr>
+                
+                <td>Row 2 Cell 2</td>
+                <td>Row 2 Cell 3</td>
+            </tr>
+            <tr>
+                <td colspan="3">Row 3 Cell 1</td>
+                
+            </tr>
+
+        </table>
+        
+        <br><br><br>
+
+        <h1>에그 스크램블(Scrabled Eggs)</h1>
+        <h3>다음은 에그 스크램블을 만드는 요리법이다.</h3>
+        <p>다음은 에그 스크램블을 만드는 요리법이다.</p>
+        다음은 에그 스크램블을 만드는 요리법이다.
+
+        <h2>재료</h2>
+        <ul>
+            <li>2eggs</li>
+            <li>1tbs butter</li>
+            <li>2tbs cream</li>
+        </ul>
+
+        <h2>방법</h2>
+        <ol>
+            <li>버터를 중간 정도로 달구어진 후라이팬에 두른다.</li>
+            <li>그릇에 달걀과 크림을 섞는다.</li>
+            <li>버터가 녹으면 크림과 달걀을 붓는다.</li>
+            <li>달걀을 반으로 접는다.</li>
+            <li>달걀이 아직도 촉촉할 때 불을 끈다.</li>
+        </ol>
+
+        <table border="1">
+            <caption>table 평가문제</caption>
+
+            <tr>
+                <td rowspan="4">
+                    <img src="증명사진.png" alt="증명사진" width="50px">
+                    <!-- <img src="라이언힘내.png" alt="증명사진" width="150px" height="160px"> -->
+                </td>
+                <td colspan="4">이력서</td>
+
+            </tr>
+
+            <tr>
+                
+                <td rowspan="2">성명</td>
+                <td rowspan="2">홍길동</td>
+                <td colspan="2">주민등록번호</td>
+                
+            </tr>
+
+            <tr>
+                
+                
+                
+                <td colspan="2">921225 - 1018293</td>
+                
+                <!-- 다른 곳에 자리가 있으면 td 지워도 그 자리만 남는다
+                span을 통해 병합을 해야 그 자리까지 꽉 차게 나옴 -->
+            </tr>
+
+            <tr>
+                <td colspan="5">생년월일 1992년 12월 25일생(만 28세)</td>
+
+            </tr>
+
+            <tr>
+                <td>주소</td>
+                <td colspan="4"></td>
+
+            </tr>
+
+            <tr>
+                <td rowspan="2">연락처</td>
+                <td>집</td>
+                <td></td>
+                <td rowspan="2">전자우편</td>
+                <td rowspan="2"></td>
+            </tr>
+
+            <tr>
+
+                <td>핸드폰</td>
+                <td></td>
+                
+                
+            </tr>
+
+
+
+
+        </table>
+
+
+    
+        <table border="1">
+
+            <tr>
+                <th colspan="6">한국의 차</th>
+            </tr>
+            <tr>
+                <th rowspan="6">뿌리차</th>
+                <td>인삼차</td>
+                <th rowspan="9">과일차</th>
+                <td>수정과</td>
+                <th rowspan="5">잎차</th>
+                <td>뽕잎차</td>
+            </tr>
+            <tr>
+                
+                <td>당귀차</td>
+                
+                <td>유자차</td>
+                
+                <td>감잎차</td>
+            </tr>
+            <tr>
+                
+                <td>생강차</td>
+                
+                <td>구기자차</td>
+                
+                <td>솔잎차</td>
+            </tr>
+            <tr>
+                
+                <td>칡차</td>
+                
+                <td>대추차</td>
+                
+                <td>국화차</td>
+            </tr>
+            <tr>
+                
+                <td>둥글레차</td>
+                
+                <td>오미자차</td>
+                
+                <td>이슬차</td>
+            </tr>
+            <tr>
+                
+                <td>마차</td>
+                
+                <td>매실차</td>
+                <th rowspan="4">기타</th>
+                <td>두충차</td>
+            </tr>
+            <tr>
+                <th rowspan="3">곡물차</th>
+                <td>보리차</td>
+                
+                <td>모과차</td>
+                
+                <td>영지버섯차</td>
+            </tr>
+            <tr>
+                
+                <td>옥수수차</td>
+                
+                <td>산수유</td>
+                
+                <td>귤강차</td>
+            </tr>
+            <tr>
+                
+                <td>현미차</td>
+                
+                <td>탱자차</td>
+                
+                <td>쌍화차</td>
+            </tr>
+
+        </table>
+
+        <table border="1">
+            <caption>My Multi Level Table</caption>
+
+            <tr>
+                <th colspan="2" rowspan="2">Column 0</th>
+                
+                <th rowspan="2">Column 1</th>
+                <th colspan="2">Column 2</th>
+            </tr>
+
+            <tr>
+                
+                
+                
+                <th>Column 2a</th>
+                <th>Column 2b</th>
+            </tr>
+            <tr>
+                <th rowspan="2">Row 1</th>
+                <th>Row 1a</th>
+                <td>123</td>
+                <td>456</td>
+                <td>789</td>
+            </tr>
+            <tr>
+                
+                <th>Row 1b</th>
+                <td>123</td>
+                <td>456</td>
+                <td>789</td>
+            </tr>
+            <tr>
+                <th colspan="2">Row 2</th>
+                
+                <td>123</td>
+                <td>456</td>
+                <td>789</td>
+            </tr>
+
+
+        </table>
+
+        <br><br><br>
+
+
+        <!-- 
+        인풋태그 
+        단일태그!
+        type이라는 속성이 있다. 숫자 문자 이메일의 속성값
+        쿼리 => 데이터
+
+        input 태그의 type속성의 속성값 password는
+        비밀번호를 가려준다.
+
+        type속성의 속성값 submit => 버튼 
+        input 태그의 속성 type의 속성값 submit의
+        이름을 변경하려면 속성 value로 바꿔줘야함
+        인풋 하나하나의 변수명(이름)이 필요함
+        속성으로 name부여하기
+
+        placeholder 속성은 회색글씨입력
+        커서를 갖다대면 사라진다.
+        사용자에게 입력 창에 입력해야할 내용에 대해 설명해줄 수 있다.
+    
+        type 속성의 속성값 중 email은 올바른 주소가 아니면
+        submit을 누를 때 경고창이 나온다.
+        HTML이 알아서 유효성 검사를 하는 것
+
+        type 속성의 속성값 중 reset은
+        form안에 있는 모든 입력된 값을 초기화
+
+
+
+
+        form태그 
+        나중에 jsp배울 때 submit을 누르면 
+        form 안에 있는 내용이 전달된다.
+        속성으로 action, 속성값으로 주소를 넣으면
+        submit을 눌렀을 때 form 안에 있는 내용이 넘어간다.
+        여기도 임시주소는 #
+    
+    
+            -->
+
+        <form action="#">
+            아이디: <input type="text" name="id" placeholder="아이디를 입력하세요."><br>
+            비밀번호: <input type="password" name="pw" placeholder="비밀번호를 입력하세요."><br>
+            이메일: <input type="email" name="email"><br>
+        
+            <!-- 
+                
+                input 태그의 type 속성 중 속성값으로
+                체크박스 checkbox: 다중선택이 가능하다 
+                라디오버튼 radio : 양자택일이 있다.
+
+                input 속성으로
+                이름과 밸류를 일일이 지정해야한다
+
+                모든 데이터는 form태그로 감싸야 한다
+                
+                
+            -->
+            
+            수강과목: <br>
+                <input type="checkbox" name="subject" value="java">JAVA
+                <input type="checkbox" name="subject" value="jsp">JSP
+                <input type="checkbox" name="subject" value="spring">Spring
+                <br>
+
+            성별: 
+                남성<input type="radio" name="gender" value="man">
+                여성<input type="radio" name="gender" value="woman">
+                <br>
+
+            <!-- textarea 태그
+                박스형태로 데이터 입력을 받아서
+                속성으로 rows, cols를 받는다
+                속성값은 알파벳A가 몇글자 들어갈 지
+                가늠해서 적기
+                미리쓰고 싶은 말은 태그 안에 넣기
+                placehoder는 적용이 안 된다.
+
+
+            -->
+
+            <textarea name="memo" cols="50" rows="10">메모를 작성하세요.
+                메모를 작성하세요.
+            메모를 작성하세요.
+            </textarea><br>
+
+            <input type="submit" value="회원가입">
+            <input type="reset" value="다시작성"> <br>
+
+        </form>
+        <br><br><br>
+
+        <h2>table안에 형식 넣기</h2>
+
+        <form action="#">
+            <table border="1">
+                <caption>회원가입</caption>
+
+                <tr>
+                    <td>아이디</td>
+                    <td>
+                        <input type="text" name="id" placeholder="아이디를 입력하세요.">
+                    </td>
+                </tr>
+                <tr>
+                    <td>비밀번호</td>
+                    <td>
+                        <input type="password" name="pw" placeholder="비밀번호를 입력하세요.">
+                    </td>
+                </tr>
+                <tr>
+                    <td>이메일</td>
+                    <td>
+                        <input type="email" name="email">
+                    </td>
+                </tr>
+                <tr>
+                    <td>성별</td>
+                    <td>
+                        남성<input type="radio" name="gender" value="man">
+                        여성<input type="radio" name="gender" value="woman">
+                    </td>
+                </tr>
+                <tr>
+                    <td>수강과목</td>
+                    <td>
+                        <input type="checkbox" name="subject" value="java">JAVA
+                        <input type="checkbox" name="subject" value="jsp">JSP
+                        <input type="checkbox" name="subject" value="spring">Spring
+                    </td>
+                </tr>
+                <tr>
+                    <td>메모</td>
+                    <td>
+                        <textarea name="memo" cols="50" rows="10">메모작성
+                        </textarea><br>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <input type="submit" value="회원가입">
+                        <input type="reset" value="다시작성">
+                    </td>
+                    
+                </tr>
+
+            </table>
+        </form>
+
+
+
+
+
+
+    </body>
+</html>
